@@ -1,15 +1,22 @@
-import  Sena from "./components/Sena.jsx";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/home';
+import Detail from './pages/Detail';
+import Basket from './pages/basket';
 
 function App() {
-  const deneme = "props mantığı";
+
   return (
     <div className="App">
-      <header className="App-header">
-        {/* Component mantığı */}
-        <Sena sena={deneme}/>
-      </header>
+      <>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="detail/:id" element={<Detail/>} />
+        <Route path="/basket"element={<Basket/>} ></Route>
+      </Routes>
+    </BrowserRouter>
+      </>
     </div>
   );
 }
-
 export default App;
