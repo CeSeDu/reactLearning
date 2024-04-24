@@ -1,0 +1,13 @@
+.course-main{
+ display: flex;   
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ gap: 50px;
+ margin: auto;
+ padding: 100px;
+ max-width: 70%;
+}
+.course{
+    max-width: 300px;
+}
