@@ -4,11 +4,11 @@ function Course({ course }) {
   const { id, title, description, image } = course;
   return (
     <div className="course">
-      <div>
-        <img src={image} width={300}/>
-        <h4>{title}</h4>
-        <h3>{description}</h3>
-        <h5>{id}</h5>
+         <img src={image} width={300}/>
+      <div className="course-content">
+        <h2>{title}</h2>
+        <h5>{description}</h5>
+        <h4>{id}</h4>
       </div>
     </div>
   );
