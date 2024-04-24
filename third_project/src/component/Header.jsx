@@ -5,7 +5,7 @@ import "../css/Header.css";
 function Header() {
   return(
   <div className="header">
-    <div className="title">Sena's first reaction project</div>
+    <div className="title">Sena's first React project</div>
     </div>
   )
 }
