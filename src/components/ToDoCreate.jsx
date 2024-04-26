@@ -14,7 +14,7 @@ function ToDoCreate( {onCreateTodo}) {
             content: newTodo
         };
         onCreateTodo(request);
-    
+        setNewTodo(''); // inputu temizle
     };
 
   return (
